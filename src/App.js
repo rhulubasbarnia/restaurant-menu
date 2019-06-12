@@ -1,5 +1,7 @@
-import React from 'react';
-import './app.scss';
+import React, {ReactComponent} from 'react';
+import './App.scss';
+import {ReactComponent as SvgBurgerMenu} from './assets/burger-menu.svg';
+import svgBurgerMenuUrl from './assets/burger-menu.svg';
 import RestaurantMenu from './components/RestaurantMenu';
 
 function App() {
@@ -28,11 +30,18 @@ function App() {
 	}
 
   return (
-    <div className="App">
-      <header className="App-header">
-				<RestaurantMenu
-				feed={restaurantFeedArr}
-				/>
+    <div className="app">
+    <div className="app-con">
+				<header className={"app-header"}>
+					<div className={"menu-con"}>
+						<SvgBurgerMenu/>
+					</div>
+				</header>
+				<div className={"app-body"}>
+					<RestaurantMenu
+						feed={restaurantFeedArr}
+					/>
+				</div>
         <p>
           Edit <code>src/App.js</code> and save to reload 2.
         </p>
@@ -44,7 +53,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+    </div>
     </div>
   );
 }

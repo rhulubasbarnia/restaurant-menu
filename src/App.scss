@@ -1,8 +1,21 @@
-.App {
+.app {
   text-align: left;
 }
+.app-header{
+  width: 100%;
+  margin-bottom: 15px;
 
-.App-header {
+}
+
+.menu-con{
+  cursor: pointer;
+}
+.app-con{
+
+  max-width: 600px;
+}
+.app{
+
   background-color: #1d2134;
   min-height: 100vh;
   display: flex;
@@ -11,6 +24,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.App-header {
 
 }
 
@@ -20,11 +35,11 @@
 
 .restaurant-menu-con{
 
-  max-width: 600px;
 }
 
 $padding: 10px;
 $color_text: #323232;
+$color_price: #b8b088;
 $border_color: rgba(17, 16, 17, 0.3);
 $bg_color: rgba(3, 3, 3, 0.03);
 
@@ -83,7 +98,7 @@ $bg_color: rgba(3, 3, 3, 0.03);
       right:$padding;
       font-size: 20px;
 
-      color: #b8b088;
+      color: $color_price;
 
       line-height: 1;
 
