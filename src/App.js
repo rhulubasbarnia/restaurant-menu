@@ -1,7 +1,6 @@
-import React, {ReactComponent} from 'react';
+import React from 'react';
 import './App.scss';
 import {ReactComponent as SvgBurgerMenu} from './assets/burger-menu.svg';
-import svgBurgerMenuUrl from './assets/burger-menu.svg';
 import RestaurantMenu from './components/RestaurantMenu';
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
 				thumbnail:'https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
 			},
 		]
-	}
+	};
 
   return (
     <div className="app">

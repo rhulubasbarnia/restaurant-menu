@@ -1,6 +1,7 @@
 import React from 'react';
 
 import RestaurantMenuItem from './RestaurantMenuItem';
+import './RestaurantMenu.scss';
 
 class RestaurantMenu extends React.Component {
   constructor(props) {
