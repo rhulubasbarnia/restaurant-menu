@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #34342c;
+  background-color: #1d2134;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,16 +24,22 @@
 }
 
 $padding: 10px;
+$color_text: #323232;
+$border_color: rgba(17, 16, 17, 0.3);
+$bg_color: rgba(3, 3, 3, 0.03);
+
 .restaurant-menu{
   width: 100%;
   line-height: 1.6;
+  color: $color_text;
 
   &-item{
     padding: $padding;
     padding-right: 90px;
     position: relative;
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid $border_color;
+    background-color: $bg_color;
 
     &-middler{
       display: flex;
@@ -42,7 +48,7 @@ $padding: 10px;
 
     }
 
-    $thumb_size: 92px;
+    $thumb_size: 97px;
     &-thumbnail{
       width: $thumb_size;
       height: $thumb_size;
@@ -61,7 +67,7 @@ $padding: 10px;
     &-header{
       padding-top: 0;
       margin-top:0;
-      margin-bottom: 10px;
+      margin-bottom:8px;
       line-height: 1;
     }
 
@@ -98,6 +104,27 @@ $padding: 10px;
           display: inline-block;
         }
       }
+    }
+  }
+
+}
+
+.restaurant-menu{
+
+  &.dark-mode{
+    $color_text: #fff;
+    $border_color: rgba(255,255,255,0.3);
+    $bg_color: rgba(255,255,255,0.03);
+
+    .restaurant-menu-item {
+      border-color: $border_color;
+      background-color: $bg_color;
+      color: $color_text;
+    }
+
+
+    .restaurant-menu-item-price {
+      color: #b8b088;
     }
   }
 }

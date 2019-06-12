@@ -10,7 +10,7 @@ class RestaurantMenu extends React.Component {
   render() {
     return (
       <div className="restaurant-menu-con">
-      <div className="restaurant-menu">
+      <div className="restaurant-menu dark-mode">
         {this.props.feed.items.map((el,ind)=>{
           return (
             <RestaurantMenuItem
