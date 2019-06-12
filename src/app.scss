@@ -1,0 +1,103 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #34342c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.restaurant-menu-con{
+
+  max-width: 600px;
+}
+
+$padding: 10px;
+.restaurant-menu{
+  width: 100%;
+  line-height: 1.6;
+
+  &-item{
+    padding: $padding;
+    padding-right: 90px;
+    position: relative;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    &-middler{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+    }
+
+    $thumb_size: 92px;
+    &-thumbnail{
+      width: $thumb_size;
+      height: $thumb_size;
+
+      margin-right: $padding;
+      background-size: cover;
+      border-radius: 5px;
+
+      flex: 0 0 $thumb_size;
+    }
+
+    & + &{
+      margin-top: 10px;
+    }
+
+    &-header{
+      padding-top: 0;
+      margin-top:0;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+
+    &-body{
+      &-paragraph{
+        font-size: 14px;
+      }
+    }
+
+    &-price{
+      position: absolute;
+      top:$padding;
+      right:$padding;
+      font-size: 20px;
+
+      color: #b8b088;
+
+      line-height: 1;
+
+      &-typo{
+        &-curr{
+          font-size: 15px;
+          vertical-align: top;
+          display: inline-block;
+
+          position: relative;
+          top: 2px;
+
+          margin-right: 3px;
+        }
+        &-price{
+
+          vertical-align: top;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
